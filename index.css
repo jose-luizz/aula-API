@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+div {
+    width: 420px;
+    min-height: 350px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+h4 {
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #cbd5e1;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    outline: none;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    font-size: 15px;
+    margin-bottom: 18px;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #cbd5e1;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid #38bdf8;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #38bdf8, #2563eb);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.02);
+    background: linear-gradient(135deg, #0ea5e9, #1d4ed8);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+}
+
+#statusSistemaA {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #e2e8f0;
+    font-size: 14px;
+}
+
+pre {
+    margin-top: 10px;
+    background: rgba(15, 23, 42, 0.7);
+    border-radius: 16px;
+    padding: 18px;
+    color: #cbd5e1;
+    font-size: 14px;
+    overflow-x: auto;
+    min-height: 180px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 950px) {
+    body {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 450px;
+    }
+}

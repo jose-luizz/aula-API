@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade: Simulador de WebHook com API de CEP</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="box sistema-a">
+        <h2>Sistema A</h2>
+        <input type="text" id="cepInput" placeholder="Digite o CEP (ex: 01001000)">
+        <button onclick="buscarEDisparar()">Atualizar Endereço</button>
+        <p id="statusSistemaA">Aguardando ação...</p>
+    </div>
+
+    <div class="box sistema-b">
+        <h2>Sistema B</h2>
+        <h4>Log de Webhooks recebidos:</h4>
+        <pre id="logWebhook">Nenhum evento recebido ainda...</pre>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
